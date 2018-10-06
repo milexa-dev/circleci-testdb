@@ -49,8 +49,11 @@ jobs:
     - run:
         name: Create non-admin user
         command: |
-          sudo mysql -u root -e "CREATE user myuser IDENTIFIED BY 'password';"
-          sudo mysql -u root -e "CREATE DATABASE wordpresstest;"
+          sudo mysql -e "CREATE DATABASE wordpresstest; SHOW DATABASES;"
+          sudo mysql -e "CREATE USER 'homestead'@'127.0.0.1' IDENTIFIED BY 'password';"
+          sudo mysql -e "GRANT ALL ON *.* TO 'homestead'@'127.0.0.1';"
+          #sudo mysql -u root -e "CREATE user myuser IDENTIFIED BY 'password';"
+          #sudo mysql -u root -e "CREATE DATABASE wordpresstest;"
     - run:
         name: Run tests
         command: |
