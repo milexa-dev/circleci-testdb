@@ -50,7 +50,7 @@ jobs:
         name: Create non-admin user
         command: |
           sudo mysql -u root -e "CREATE user homestead IDENTIFIED BY 'secret';"
-          sudo mysql -u root -e "CREATE DATABASE wordpress-test;"
+          sudo mysql -u root -e "CREATE DATABASE wordpresstest;"
     - run:
         name: Run tests
         command: |

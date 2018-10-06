@@ -18,7 +18,7 @@ $password = "secret";
 
 $table = "tcompany";
 try {
-	$db = new PDO("mysql:dbname=wordpress-test;host={$servername}", $username, $password );
+	$db = new PDO("mysql:dbname=wordpresstest;host={$servername}", $username, $password );
 	$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );//Error Handling
 	$sql ="CREATE table $table(
      ID INT( 11 ) AUTO_INCREMENT PRIMARY KEY,
