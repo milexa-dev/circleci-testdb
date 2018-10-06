@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "homestead";
+$username = "myuser";
 $password = "password";
 
 //try {
