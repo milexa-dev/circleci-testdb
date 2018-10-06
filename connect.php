@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "homestead";
-$password = "secret";
+$password = "password";
 
 //try {
 //    $conn = new PDO("mysql:host=$servername", $username, $password);
